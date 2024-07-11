@@ -1,0 +1,21 @@
+.circle-box div {
+    padding: 0 40px;
+    color: black;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 28px;
+    color: #000;
+}
+
+#data-area p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    color: #000;
+
+    
+}
