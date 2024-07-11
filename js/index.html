@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+        <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9z"/>
+        <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1zm1.038 3.018a6 6 0 0 1 .924 0 6 6 0 1 1-.924 0M0 3.5c0 .753.333 1.429.86 1.887A8.04 8.04 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5M13.5 1c-.753 0-1.429.333-1.887.86a8.04 8.04 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1"/>
+      </svg> -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
+      <script src="js/progressbar.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+      
+</head>
+<body style="background-color: rgb(250, 250, 250); font-family: roboto;">
+    <header>
+        <!-- Nav BAR -->
+       
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar" style="position: fixed; width: 100%; z-index: 100; height: 100px; ">                             
+            <div style="width: 100%;"   class="shadow p-3 mb-5 bg-white rounded">
+            <div class="container-fluid">
+               
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <li class="nav-item">
+                        <img src="smalllogo.png" alt="Google logo" style="width: 40px;" class="user-select-none">
+                      </li>
+                    <a style="padding-left: 80px;"   class="nav-link active" aria-current="page" href="#conhecacurso">Conheça o curso</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="padding-left: 70px;"   class="nav-link" href="#Beneficios">Beneficios</a>
+                  </li>
+                  
+                
+                  <li class="nav-item">
+                    <a style="padding-left: 70px;"   class="nav-link" href="#Depoimentos">Depoimentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="padding-left: 70px;"   class="nav-link" href="#perguntasfrequentes">Perguntas Frequentes</a>
+                  </li>
+                    
+                    
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                    <img style="padding-right: 40px;" src="pontos google.png">
+                </form>
+                <form class="d-flex">
+                    <img src="emaillogo.jpg" alt="haddy" style="height: 40px; padding-right: 40px;">
+                </form>
+                <form class="d-flex" role="search">            
+                  <button id="bi" style="background-color: rgb(142, 142, 237);" type="button" class="btn btn-secondary" onclick="window.location.href='https://skillshop.exceedlms.com/student/path/1176018'">Inscreva-se</button>
+                </form>
+            
+              </div>
+            </div>
+          </nav>
+    </header>
+        <!-- TOPO SITE -->
+                      
+               
+              
+                <div class="col-sm-2 align-items-center d-flex justify-content-end ms-2">
+                    
+                </div>
+                <div class="col-sm-2 align-items-center d-flex justify-content-end ms-2">                    
+                </div>
+                <div class="col-sm-2 align-items-center d-flex justify-content-end ms-2">
+                </div>
+                <div class="col-sm-2 align-items-center d-flex justify-content-end ms-2">
+                </div>
+        </div>
+        
+       
+            </div>
+        </div>
+       
+
+   <!-- TITULO SITE -->  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">     
+                <h1 style= "padding-left: 120px; padding-top: 190px; font-size: 60px;"><span style="color: rgb(68, 68, 173);">G</span><span style="color: rgb(197, 6, 6);">o</span><span style="color: darkorange;">o</span><span style="color: rgb(68, 68, 173);">g</span><span style="color: rgb(39, 65, 13);">l</span><span style="color: rgb(197, 6, 6);">e</span><br>IA Generativa Para <span style="color: rgb(68, 68, 173); padding-left: 2px;">Educadores</span></h1>       
+                </div> 
+                     <div  class="col-6"> 
+                        <img  src="https://blog.connext.es/hs-fs/hubfs/IMGs_Blog_Marketing_IAs_1.jpg?width=1200&name=IMGs_Blog_Marketing_IAs_1.jpg" style="padding-top: 150px; border-radius: 20px; height: 500px;" alt="oi">
+                </div>
+                
+            </div>
+            <div class="row d-flex align-items-start justify-content-start">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" style="margin-left: 120px; margin-top: -110px; margin-bottom: 40px;" onclick="window.location.href='https://skillshop.exceedlms.com/student/path/1176018'">Quero participar</button>
+                </div>
+            </div>
+        
+</div>     
+
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- O que somos -->
+<h1 id="conhecacurso" style="padding-top: 110px;padding-left: 60px;  font-size: 43px; color: rgb(68, 68, 173);">Conheça o curso</h1>
+<div style="height: 60px;"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md - 4 " >
+            <p style="font-size: 25px;"> O "AI for Educators" é um site desenvolvido colaborativamente com o MIT que oferece recursos e ferramentas, como mapas mentais, resumos, outros métodos de ensino e muito mais para ajudar educadores a melhorar suas aulas, integrando a IA em suas práticas de ensino.</p>
+            <button type="button" class="btn btn-primary" style="margin-top: 20px;" onclick="window.location.href='https://grow.google/ai-for-educators/'">Saiba mais</button>
+            <a href="https://getbootstrap.com/docs/4.1/utilities/shadows/" alt="oi"></a>
+      
+        </div>
+            <div class="col-md-4 " >
+            
+            </div>
+
+                <div style="margin-top: -115px;" class="col-md-4 " >
+                  <h1>Aprenda:</h1>
+                  <div class="container mt-5 d-flex justify-content-end">
+                    <div class="card chat-container ml-auto">
+                        <div class="card-body">
+                            <img class="card-title" src="imagemlogogenai" alt="logo" style="height: 50px;"/>
+                            <div id="chatBox" class="mb-3">
+                                <!-- Chat messages will appear here -->
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="promptInput" class="form-control chat-message" value="Elabore uma questão avançada de calorimetria" readonly>
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" id="sendButton">Submit Prompt</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                   
+                </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- ICONES (Nossas vantagems)-->
+<div style="height: 120px;"></div>
+<div id="services-area">
+    <div class="container">
+        <div class="row d-flex align-items-center" >
+            <div class="col-12">
+              <h1 id="Beneficios" style=" text-align: center; font-size: 43px; padding-bottom: 50px; padding-top: 120px; color: rgb(68, 111, 25);">Beneficios</h1>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="col-md-4 " >
+                <img src="alarm.svg" style="padding-left: 90px; height: 60px;">
+                <div style="height: 50px;"></div>
+                <h4 style="margin-left: 80px;">Tempo</h4>
+                <p style="font-size: 20px;">Economize até <span style="color:rgb(110, 179, 40); font-size: ;">10 horas</span> de seu tempo!</p>
+            </div>
+            <div class="col-md-4 ">
+                <img src="https://img.freepik.com/vetores-premium/saco-do-dinheiro-icone_910989-1523.jpg" style="padding-left: 90px; height: 100px;">
+                <div style="height: 20px;"></div>
+                <h4 style="margin-left: 100px;">Preço</h4>
+                <p style="font-size: 20px;" >O curso é totalmente <span style="color: rgb(142, 142, 237);">gratuito</span></p>
+            </div>
+            <div class="col-md-4 ">
+                <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/diagonalarrowrightup_110941.png" style="padding-left: 90px; height: 60px; margin-top: 80px; padding-top: -40px;">
+                <div style="height: 70px;"></div>
+                <h4>Aumento da produtividade</h4>
+                <p style="font-size: 20px;" >Nossos designers são especializados em UI/UX, e também possuem <span style="color: darkorange;">vasta experiência</span> no mercado de software.</p>
+            </div>
+      
+          
+          
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+        <div style="background-color: rgb(240, 242, 239);" id="val">
+            <div class="container">         
+                </div>
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col">
+                
+                    </div>
+                </div>
+
+<!-- imagem direita e texto --> 
+<div style="height: 120px;"></div>
+
+<div class="row">  
+    <div class="col-6"> 
+        
+        <div style="height: 120px;"></div>
+
+        <h2 style="padding-left: 75px;"   id="t3">Desenvolvido pelo Google em colaboração com o MIT RAISE</h2>    
+    
+    </div>   
+    <div class="col-6">
+        <img style="padding-bottom: 100px; padding-left: 160px;"  height="400px" src="https://mail.google.com/mail/u/0?ui=2&ik=24162e258b&attid=0.1&permmsgid=msg-a:r5206499104233180528&th=1909ef8649e93614&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ97XUVXYTZubRDWu-Q-OnFfYnsF5dhMJJl0PJ4S0OlNVHkUQy8agtNRmPAd1zGClqm2YZxxAQGYweS_2hkNllZkwN4hj0shq37D5bXXI8nKC0LOPv0ZL0FdP_o&disp=emb&realattid=ii_lyggybt30" alt="">
+    </div>
+   
+</div>  
+
+
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 60px;"></div>
+
+    <!-- BOLAS -->
+
+     <div style="height: 80px;"></div> 
+    <div id="data-area">
+        <div class="container">
+            <div class="row" style="padding-left: 200px;">
+                <div style= "margin-right: 80px; margin-left: -70px;" class="col-md-3 circle-box">
+                    <div id="circleA" style="position: relative;"></div>   
+                    <p><strong>Usuários no Brasil</strong></p>
+                </div>                
+                <div style="margin-right: 60px;" class="col-md-3 circle-box">
+                    <div id="circleB" style="position: relative;"></div>
+                    <p><strong>Duração do curso </strong></p>
+                </div>
+                <div class="col-md-3 circle-box">
+                    <div id="circleC" style="position: relative;"></div>
+                    <p><strong>Inovação</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 100px;"></div>
+                             
+           <!-- DEPOIMENTOS IMAGENS -->
+
+    <div class="container-fluid" style=" margin-left: 0; margin-right: 0;">
+      <h1 id="Depoimentos" style=" text-align: center; font-size: 43px; padding-bottom: 50px; color: rgb(197, 6, 6); padding-top: 120px;">Depoimentos</h1>
+        <div style="height: 60px;"></div>
+        <div class= "row">
+          
+            <div class="col">
+                <img id = i2  src="imagembolasticaemprendendorsimo.png" alt="haddy" style="height: 110px; margin-left: 270px;">
+
+            </div>
+
+            <div class="col">
+                <img id = i3 src="imagembolatec.png" alt="haddy" style="height: 110px; margin-left: 270px;">
+
+            </div>
+        </div>
+        <!-- FALAS DEPOIMENOS -->
+        <div class="row">
+          
+            <div class="col- col-md-6" style="padding-top: 40px;">
+              Ele mostra as diferentes IAs e introduz a pessoa nessa área, mostrando como que ela pode ser ajudada para melhorar o trabalho. O curso tem uma capacidade enorme de impacto, gerando mais criatividade, produtividade, ganho de tempo e principalmente na qualidade da aula.
+            </div>
+            <div class="col - col-md-6" style="padding-top: 40px;">
+              O curso oferece uma excelente visão geral sobre IAs generativas e sua aplicação na educação, essenciais para melhorar a eficiência das atividades manuais e orientar os alunos no uso ético, complementando a aprendizagem.
+            </div> 
+            <div style="height: 120px;"></div>
+  
+        
+    </div>
+    
+    <!-- FAQ -->
+    <h1 id="perguntasfrequentes" style=" text-align: center; font-size: 43px; padding-bottom: 50px; color: rgb(68, 68, 173);">Perguntas Frequentes</h1>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              O que receberei ao terminar o curso?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Após concluir o curso, os professores recebem um certificado que podem apresentar ao seu distrito para crédito de desenvolvimento profissional (PD), dependendo dos requisitos do distrito e do estado.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Como as habilidades que aprendo são aplicáveis ao meu trabalho?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Este curso de inteligência artificial generativa para professores fornecerá aplicações práticas que ajudam a economizar tempo aumentando a eficiência, a produtividade e a criatividade. O curso inclui experiência prática no uso de ferramentas de IA generativa para realizar atividades como redigir correspondências de classe (mensagens, e-mails, boletins informativos), criar avaliações e fornecer feedback, diferenciar instruções para atender às diversas necessidades dos alunos e criar estratégias instrucionais para tornar as aulas mais envolventes para os alunos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">               
+        Para quem é o curso de Inteligência Artificial Generativa para Educadores?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Inteligência Artificial Generativa para Educadores é projetado para educadores do ensino médio e fundamental de qualquer disciplina, sem necessidade de experiência técnica. Qualquer professor interessado em usar IA para economizar tempo e melhorar a educação dos alunos pode se beneficiar deste curso.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="height: 100px;"></div>
+    <!-- PARTE FINAL (FOOTER) -->
+    <footer>
+        <div class="container-fluid" style="background-color: rgb(240, 242, 239); border-radius: 20px;" id="feet">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Contato: </p>
+
+                <ul>
+                    <li>0800-727-0278</li>
+                    <li>0800 724 8269</li> 
+                    <li>0800-709-4664</li>
+                </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>Copyright</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Redes Sociais</p>
+                    <ul>
+                        <li>Instagram: @google</li>
+                        <li>Facebook: @Google</li>
+                        <li>Twitter: @Google</li>
+                        <li>TikTok: @google</li>
+                    </ul>
+                     
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
+<script>
+    window.addEventListener('scroll', () => {
+
+    if (window.scrollY > 500) {
+        return document.querySelector('#navbar').classList.add('hide');
+    }
+    return document.querySelector('#navbar').classList.remove('hide');
+  
+  });
+
+  document.getElementById('sendButton').addEventListener('click', function() {
+        const chatBox = document.getElementById('chatBox');
+        const userMessage = '<div class="alert alert-secondary chat-message" role="alert">Elabore uma questão avançada de calorimetria</div>';
+        const autoResponse = '<div class="alert alert-primary chat-message" role="alert">Um engenheiro desenvolve um sistema de aquecimento para uma casa sustentável, combinando energia solar com um reservatório de água para armazenamento térmico. O objetivo é manter a casa a 20°C, considerando que a temperatura externa pode cair para 5°C à noite. A casa perde calor para o ambiente a uma taxa de 850 kJ/h por cada grau de diferença de temperatura. Um reservatório de 500 litros é aquecido até 80°C durante o dia usando painéis solares e isolado termicamente. A capacidade térmica específica da água é de 4,18 kJ/kg°C, e a densidade da água é 1 kg/L. Calcule quantas horas o sistema pode manter a temperatura desejada durante a noite usando o calor armazenado no reservatório, assumindo que toda a energia térmica é utilizada para compensar a perda de calor.</div>';
+
+        // Append user message
+        chatBox.innerHTML += userMessage;
+
+        // Append automated response
+        setTimeout(() => {
+            chatBox.innerHTML += autoResponse;
+        }, 500); // Delay for effect
+
+        // Disable send button after first send
+        this.disabled = true;
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
