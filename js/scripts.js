@@ -4,11 +4,11 @@ $(document).ready(function() {
     let containerA = document.getElementById("circleA");
     let circleA = new ProgressBar.Circle(containerA, {
 
-        color: '#64DAF9',
+        color: '#000000',
         strokeWidth: 8,
         duration: 1400,
         from: { color: '#AAA ' },
-        to: { color: 'rgb(255, 0, 0)' },
+        to: { color: '#4285F4 ' },
 
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
@@ -23,11 +23,11 @@ $(document).ready(function() {
      let containerB = document.getElementById("circleB");
      let circleB = new ProgressBar.Circle(containerB, {
  
-         color: '#64DAF9',
+         color: '#000000',
          strokeWidth: 8,
          duration: 1600,
          from: { color: '#AAA' },
-         to: { color: 'rgb(118, 184, 53) ' },
+         to: { color: '#0F9D58 ' },
  
          step: function(state, circle) {
              circle.path.setAttribute('stroke', state.color);
@@ -42,11 +42,11 @@ $(document).ready(function() {
      let containerC = document.getElementById("circleC");
      let circleC = new ProgressBar.Circle(containerC, {
  
-         color: '#64DAF9',
+         color: '#000000',
          strokeWidth: 8,
          duration: 2000,
          from: { color: '#AAA' },
-         to: { color: 'rgb(62, 62, 210);' },
+         to: { color: '#F48400  ' },
  
          step: function(state, circle) {
              circle.path.setAttribute('stroke', state.color);
